@@ -6,8 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		MasterInterface mster = context.getBean("master", MasterInterface.class);
-		mster.name();
+		SportTennis tennis = context.getBean("sportTennis", SportTennis.class);
+		tennis.tennis();
 		
 		context.close();
 
