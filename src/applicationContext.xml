@@ -7,12 +7,20 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
+    
+    <context:component-scan base-package="com.spring" />
+   
+
+</beans>
+
+   <!-- 
     <context:property-placeholder location="classpath:data.properties"/>
-    <bean id="user" class="com.spring.di.User">
-    	<!--  <constructor-arg ref="person"></constructor-arg> -->
-    	<!-- <property name="person" ref="person"></property>  -->
+    <bean id="user" class="com.spring.di.User" init-method="doStart" destroy-method="doEnd">
+    	  <constructor-arg ref="person"></constructor-arg> 
+    	- <property name="person" ref="person"></property>  
     	<property name="email" value="${us.email}"/>
     	<property name="team" value="${us.team}" />
     </bean>
-    <bean id="person" class="com.spring.di.Person"></bean>
-</beans>
+    <bean id="person" class="com.spring.di.Person"></bean> 
+    
+     --> 

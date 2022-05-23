@@ -6,4 +6,6 @@ public interface UserInterface {
 	public void getPerson();
 	public String getEmail();
 	public String getTeam();
+	public void doStart();
+	public void doEnd();
 }

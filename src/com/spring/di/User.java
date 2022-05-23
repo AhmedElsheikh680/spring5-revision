@@ -36,6 +36,56 @@ public class User implements UserInterface {
 	public void setPerson(PersonInterface personInterface) {
 		this.personInterface = personInterface;
 	}
+	@Override
+	public void doStart() {
+		// TODO Auto-generated method stub
+		System.out.println("Start");
+		
+	}
+	@Override
+	public void doEnd() {
+		System.out.println("End");
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 }
