@@ -7,12 +7,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class Master implements MasterInterface{
 
+	@Autowired
 	private Sport sport;
 	
-	@Autowired
-	public Master(Sport sport) {
-		this.sport = sport;
-	}
+//	@Autowired
+//	public Master(Sport sport) {
+//		this.sport = sport;
+//	}
+//	@Autowired
+//	public void setSport(Sport sport) {
+//		this.sport = sport;
+//	}
+	
 	@Override
 	public void name() {
 		System.out.println("Iam Master");
