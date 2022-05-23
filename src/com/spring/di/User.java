@@ -3,6 +3,24 @@ package com.spring.di;
 public class User implements UserInterface {
 
 	private PersonInterface personInterface;
+	private String email;
+	
+	@Override
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	@Override
+	public String getTeam() {
+		return team;
+	}
+	public void setTeam(String team) {
+		this.team = team;
+	}
+
+	private String team;
 //	public User(PersonInterface personInterface) {
 //		this.personInterface = personInterface;
 //	}

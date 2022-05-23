@@ -10,7 +10,9 @@
     
     <bean id="user" class="com.spring.di.User">
     	<!--  <constructor-arg ref="person"></constructor-arg> -->
-    	<property name="person" ref="person"></property>
+    	<!-- <property name="person" ref="person"></property>  -->
+    	<property name="email" value="a@a.com"/>
+    	<property name="team" value="ICPC" />
     </bean>
     <bean id="person" class="com.spring.di.Person"></bean>
 </beans>

@@ -8,7 +8,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		User user = context.getBean("user", User.class);
-		user.getPerson();
+		System.out.println(user.getEmail() + user.getTeam());
 		context.close();
 
 	}
