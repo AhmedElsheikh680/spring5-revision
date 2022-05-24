@@ -6,9 +6,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
-		MasterInterface master = context.getBean("myMasterInterface", MasterInterface.class);
-		master.name();
-		master.getMySport();
+		Manager master = context.getBean("manager", Manager.class);
+			System.out.println(master.getEmail());
+			System.out.println(master.getTeam());
 		context.close();
 
 	}
